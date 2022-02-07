@@ -1,0 +1,81 @@
+{
+    "name": "DEWALT DWARA 100",
+    "rating": 5,
+    "price": "23.35",
+    "discount_price": "40.99",
+    "description": "Description de producto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi corporis iusto nostrum nihil quod libero sed. Doloremque excepturi maxime velit.",
+    "all_details": [
+        {
+            "label": "General",
+            "content": {
+                "h3": "Product Information",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptatum suscipit, reiciendis ducimus dicta assumenda eveniet vitae illo eius cum!",
+                "list": ["Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, aut.", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, aut.", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, aut."],
+                "p":  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptatum suscipit, reiciendis ducimus dicta assumenda eveniet vitae illo eius cum!"
+            }
+        },
+        {
+            "label":"Especificaciones",
+            "content": [
+                {
+                    "label": "General",
+                    "data": [
+                        {
+                            "label": "Cantidad empaquetada",
+                            "data": "1"
+                        },
+                        {
+                            "label": "Fabricante",
+                            "data": "Microsoft"
+                        },
+                        {
+                            "label": "Gama de productos",
+                            "data": "Microsoft ratón móvil inalámbrico"
+                        }
+                        
+                    ]
+                },
+                {
+                    "label": "Batería",
+                    "data": [
+                        {
+                            "label": "Factor de forma",
+                            "data": "Tipo AA"
+                        },
+                        {
+                            "label": "Tecnología",
+                            "data": "Alcalino"
+                        }        
+                    ]
+                },
+                {
+                    "label": "Dispositivo de entrada",
+                    "data": [
+                        {
+                            "label": "Interfaz",
+                            "data": "USB , 2.4 GHz"
+                        },
+                        {
+                            "label": "N° de botones",
+                            "data": "3"
+                        }        
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Documentos",
+            "content": [
+                {
+                    "label": "Guías de inicio rápido",
+                    "url": "/#"
+                }
+            ]
+        },
+        {
+            "label": "Comentarios",
+            "content": {"label": "n/a"}
+        }
+        
+    ]
+}

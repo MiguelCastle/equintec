@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>expand</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-520.000000, -320.000000)">
+            <g id="expand" transform="translate(520.000000, 320.000000)">
+                <rect id="ViewBox" x="0" y="0" width="60" height="60"></rect>
+                <path d="M53,38.86 L47.6975,44.1625 L39.7675,36.2325 L36.2325,39.7675 L44.1625,47.6975 L38.86,53 L53,53 L53,38.86 Z M8,22.14 L13.3025,16.8375 L21.2325,24.7675 L24.7675,21.2325 L16.8375,13.3025 L22.14,8 L8,8 L8,22.14 Z M53,8 L38.86,8 L44.1625,13.3025 L36.2325,21.2325 L39.7675,24.7675 L47.6975,16.8375 L53,22.14 L53,8 Z M8,53 L22.14,53 L16.8375,47.6975 L24.7675,39.7675 L21.2325,36.2325 L13.3025,44.1625 L8,38.86 L8,53 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

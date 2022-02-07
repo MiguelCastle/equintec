@@ -1,0 +1,116 @@
+.team-member-wrp {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: .8rem;
+}
+
+.team-member-wrp .team-member-img {
+  height: 100%;
+  width: 50%;
+  background: gray;
+  border-radius: 15px;
+}
+
+.team-member-wrp .team-member-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  padding-left: 10px;
+}
+
+.team-member-wrp .team-member-info > ul {
+  text-transform: capitalize;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.35);
+}
+
+.team-member-wrp .team-member-info > ul li {
+  margin: 1vh 0;
+}
+
+@media only screen and (min-width: 992px) {
+  .team-member-wrp .team-member-info > ul li {
+    font-size: .6rem;
+  }
+}
+
+.team-member-wrp .team-member-info > ul li:nth-child(4) {
+  text-transform: lowercase;
+  font-size: .73rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .team-member-wrp .team-member-info > ul li:nth-child(4) {
+    font-size: .6rem;
+  }
+}
+
+.team-member-wrp .team-member-info .team-member-additonal-links {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 85%;
+      grid-template-columns: 10% 85%;
+  gap: 5%;
+  padding-top: 5px;
+}
+
+.team-member-wrp .team-member-info .team-member-additonal-links i {
+  font-size: 1.3rem;
+  padding-top: 5px;
+  margin-right: 3vw;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 992px) {
+  .team-member-wrp .team-member-info .team-member-additonal-links i {
+    font-size: 1rem;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .team-member-wrp .team-member-info .team-member-additonal-links p {
+    font-size: .6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .team-member-wrp .team-member-info {
+    padding-top: 5%;
+  }
+  .team-member-wrp .team-member-info > ul {
+    font-size: 1rem;
+  }
+  .team-member-wrp .team-member-info > ul li:nth-child(4) {
+    font-size: 1rem;
+  }
+  .team-member-wrp .team-member-info > div i {
+    margin-right: 1vw;
+  }
+  .team-member-wrp .team-member-info > div p {
+    padding-top: 3px;
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=teamMember.css.map */

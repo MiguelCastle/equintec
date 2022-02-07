@@ -1,0 +1,152 @@
+#contactus-container{
+    @media #{$lg-layout} {
+        @include flexRowWrap;
+    }
+    >ul{
+        padding: 0 3vw;
+        @include flexColumn;
+        gap: 4vh;
+        @media #{$md-layout} {
+            @include flexRow;
+            gap: 8vw;
+        }
+        @media #{$lg-layout} {
+            @include flexRowCenter;
+            padding: 0;
+            width:50%;
+            gap: 0;
+            padding: 2%;
+        }
+        >li{
+            @media #{$md-layout} {
+              width: 45%;
+            }
+            @media #{$lg-layout} {
+                width: 100%;
+                height: 80%;
+            }
+            @media #{$lg-layout} {
+                width: 100%;
+                height: 70%;
+            }
+            h4{
+                font-size:var(--md-title-fs);
+                font-weight: 500;
+                padding-bottom: 2vh;
+                @media #{$lg-layout} {
+                    font-size: 1.4rem;
+                }
+                @media #{$laptop-device} {
+                    font-size: 1.8rem;
+                }
+            }
+            ul {
+                @include flexColumn;
+                gap: 3vh;
+                @media #{$lg-layout} {
+                    gap: 0;
+                }
+                li{
+                    padding-right: 10vw;
+                    font-weight: 300;
+                    line-height: var(--lg-title-fs);
+                    display: grid;
+                    grid-template-columns: 20% 80%;
+                    gap: 5vw;
+                    grid-template-rows: 8vh;
+                    font-size: 1.2rem;
+                    align-items: center;
+                    @media #{$lg-layout} {
+                        padding-right: 0;
+                        grid-template-rows: 12vh;
+                        gap: 0;
+
+                        grid-template-columns: 10% 90%;
+                    }
+                    svg{
+                        padding: 3vw;
+                        @media #{$md-layout}{
+                            padding: 1.25vw;
+                        }
+                        @media #{$lg-layout} {
+                            font-size: .8rem;
+                            padding: 0;
+                        }
+                    }
+                    p{
+                        @include flexColumn;
+                        @media #{$lg-layout} {
+                            padding-right: 0;
+                            gap: 0;
+                            font-size: .6rem;
+                            width: 100%;
+                        }
+                        @media #{$laptop-device} {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    >div{
+        .tp-template{
+            width: 100vw;
+            height: 20vh;
+            padding: 0 3vw;
+            h3{
+                padding-bottom: 1%;
+            }
+        }
+    }
+}
+.contactus-pgbckgrnd{
+    background: url('../../images/tools4.jpeg');
+    background-position: right;
+    background-size: cover;
+    position: relative;
+}
+#contact-form-container{
+    @include flexColumn;
+    gap: 3vh;
+    padding: 0 3vw;
+    padding-bottom: 4vh;
+    input, textarea{
+        border: none;
+        background: rgb(241, 241, 241);
+        padding: 3%;
+        border-radius: 0;
+        box-shadow: none;
+        &::placeholder{
+            color: var(--color-dark-gray);
+        }
+    }
+    textarea{
+        height: 30vh;
+    }
+    button{
+        background: none;
+        border: 1px solid var(--third-color);
+        color: var(--third-color);
+        width: 40%;
+        padding: 3%;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: 300;
+
+    }
+    @media #{$md-layout} {
+        @include flexRowWrap;
+        input{
+            width: 47%;
+        }
+        textarea{
+            width: 98%;
+        }
+        button{
+            padding: 1%;
+            width: 20%;
+        }
+    }
+}

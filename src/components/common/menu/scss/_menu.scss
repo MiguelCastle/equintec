@@ -1,0 +1,210 @@
+#menu-container{
+    background: none;
+    height: 95%;
+    @include flexRowCenter;
+    @media #{$lg-layout} {
+        background: purple;
+        width: 100%;
+        height: 100%;
+    }
+}
+#menu-btn{
+    position: relative;
+    padding: 25%;
+    background: transparent;
+    border: none;
+    @media #{$md-layout} {
+        padding: 35%;
+    }
+    @media #{$lg-layout} {
+        display: none;
+    }
+}
+#menu-options-wrp{
+    background: var(--color-dark-gray);
+    z-index: 5;
+    position: absolute;
+    top: 10.5vh;
+    left: 0;
+    width: 100vw;
+    height: 80vh;
+    @include flexColumnCenter;
+    gap: 2vh;
+    @media #{$md-layout}{
+        width: 50vw;
+    }
+    @media #{$lg-layout} {
+        position: relative;
+        opacity: 1;
+        top:0;
+        animation: slideInLeft 1s ease-in-out forwards;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        @include flexRow;
+        gap: 8%;
+    }
+    .main-menu-option{
+        display: block;
+        font-size: 1.8rem;
+        color: var(--color-white);
+        text-decoration: none;
+        text-transform: uppercase;
+        background: none;
+        border: none;
+        @media #{$lg-layout} {
+            @include flexColumnCenter;
+            font-size: 1rem;
+            height: 100%;
+        }
+    }
+}
+.menu-inview{
+    opacity: 1;
+    animation: slideInLeft 1s ease-in-out forwards;
+}
+.menu-notinview{
+    // opacity: 0;
+    animation: slideOutLeft 1s ease-in-out forwards;
+}
+.secondary-menu-container{
+    @include flexRowWrap;
+    @media #{$lg-layout} {
+        height: 100%;
+    }
+}
+.sm-content{
+    @include flexRowWrap;
+    position: absolute;
+    background: var(--color-dark-gray);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+    @media #{$lg-layout} {
+        z-index: 3;
+        top: 8vh;
+        height: 80vh;
+        width: 100%;
+        gap: 0 0;
+        @include flexRowWrap;
+    }
+    button{
+        width: 50%;
+        height: 8%;
+        border: none;
+        border-bottom: 1px solid var(--color-white);
+        color:var(--third-color);
+        font-size: .8rem;
+        background-color: transparent;
+        @media #{$lg-layout} {
+            display: none;
+        }
+    }
+    h5{
+        @include flexRowCenter;
+        font-size: 1.8rem;
+        text-transform: capitalize;
+        height: 8%;
+        width: 50%;
+        text-align: center;
+        color: var(--color-white);
+        border-bottom: 1px solid var(--color-white);
+        @media #{$lg-layout} {
+           align-items: initial;
+            @include flexColumn;
+            border-bottom:none;
+            text-align: left;
+            height: initial;
+            padding: 0%;
+            margin-bottom: 0%;
+            width: 100%;
+            height: 6%;
+        }
+    }
+    .sm-list{
+        height: 92%;
+        width: 100%;
+        @include flexColumn;
+        background:var(--color-dark-gray);
+        overflow-y: scroll;
+        @media #{$lg-layout} {
+            width: 40%;
+        }
+        >li{
+            padding: 5%;
+            color: var(--color-white);
+            border-bottom: 1px solid var(--color-white);
+            @media #{$lg-layout} {
+                padding: 2%;
+                font-size: .8rem;
+            }
+            &:last-child{
+                border-bottom: none;
+
+            }
+        }
+
+    }
+}
+.thirdmenu-list{
+    position: absolute;
+    top: 10%;
+    height: 100%;
+    width: 94%;
+    >li{
+        height: 80%;
+        width: 100%;
+        position: absolute;
+        background:var(--color-dark-gray);
+        border-bottom: 1px solid var(--color-white);
+        @media #{$lg-layout} {
+            height: 100%;
+        }
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+    @media #{$lg-layout} {
+        position: relative;
+        top: 0;
+        width: 30%;
+        height: 50%;
+        left: 0%;
+    }
+}
+.third-menu-container{
+    position: relative;
+    @media #{$lg-layout} {
+        height: 100%;
+    }
+    h3{
+        height: 6vh;
+        padding-top: 2%;
+        color: var(--color-white);
+        border-bottom: 1px solid var(--color-white);
+        @media #{$lg-layout} {
+            font-size: .8rem;;
+        }
+    }
+    >ul{
+       height: 100%; 
+        li{
+            padding: 1%;
+            height: 5vh;
+            color: var(--color-white);
+            border-bottom: 1px solid var(--color-white);
+            @media #{$lg-layout} {
+                font-size: .6rem;
+            }
+            &:last-child{
+                border-bottom: none;
+            }
+            a{
+                color: var(--color-white);
+                text-decoration: none;
+            }
+        }
+    }
+}

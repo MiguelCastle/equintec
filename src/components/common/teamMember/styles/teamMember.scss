@@ -1,0 +1,92 @@
+.team-member-wrp{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: .8rem;
+    // background: orange;
+    .team-member-img{
+        height: 100%;
+        width: 50%;
+        background: gray;
+        border-radius: 15px;
+    }
+    .team-member-info{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding-left: 10px;
+        >ul{
+            text-transform: capitalize;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.35);
+            li{
+                margin: 1vh 0;
+                @media only screen and (min-width: 992px) {
+                    font-size: .6rem;
+                }
+                &:nth-child(4){
+                    text-transform: lowercase;
+                    font-size: .73rem;
+                    @media only screen and (min-width: 992px) {
+                        font-size: .6rem;
+                    }
+                }
+            }
+        }
+        .team-member-additonal-links{
+            display: grid;
+            grid-template-columns: 10% 85%;
+            gap: 5%;
+            
+            // display: flex;
+            // flex-direction: row;
+            padding-top: 5px;
+            i{
+                font-size: 1.3rem;
+                padding-top: 5px;
+                margin-right: 3vw;
+                cursor: pointer;
+                @media only screen and (min-width: 992px) {    
+                    font-size: 1rem;
+                    padding: 0;
+                }
+            }
+            p{
+                @media only screen and (min-width: 992px) {    
+                    font-size: .6rem;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 1440px) {
+    .team-member-wrp{
+        //font-size: 1.2rem;
+        .team-member-info{
+            padding-top: 5%;
+            >ul{
+                font-size: 1rem;
+                li{
+                    &:nth-child(4){
+                        font-size: 1rem;
+                    }
+                }
+            }
+            >div{
+                i{
+                    margin-right: 1vw;
+                }
+                p{
+                    padding-top: 3px;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,138 @@
+#aboutus-pgbckgrnd{
+    background: url('../../images/aboutus.jpeg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+//    @media #{$md-layout} {
+//        width: 100vw;
+//        background: red;
+//    }
+}
+.tp-template{
+    // padding: 6vh 0;
+    padding: 4vh 3vw;
+    @media #{$lg-layout} {
+        width: 50%;
+        height: 70vh;
+        display: inline-block;
+        padding: 15vh 3vw;
+        // background: purple;
+    }
+    h3{
+        font-size: var(--lg-title-fs);
+        padding: 1vh 0;
+        @media #{$md-layout} {
+            font-size: 2rem;
+            padding-bottom: 6%;
+        }
+    }
+    p{
+        line-height: var(--md-title-fs);
+        color: var(--color-gray-dark);
+        @media #{$md-layout} {
+            font-size: 1.4rem;
+            line-height: 2rem;
+        }
+        @media #{$lg-layout} {
+            font-size: 1rem;
+        }
+    }
+}
+#what-we-do{
+    padding: 4vh 3vw 6vh 3vw;
+    @media #{$lg-layout} {
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+        background: var(--third-color);
+        padding: 15vh 3vw;
+        h2{
+            font-size: var(--lg-title-fs);
+            @media #{$lg-layout} {
+                color: #fff;
+            }
+        }
+    }
+    ul{
+        padding-top: 6vh;
+        @include flexColumn;
+        gap: 4vh;
+        @media #{$md-layout} {
+            @include flexRowWrapCenter;
+            gap: 2vw;
+        }
+        @media #{$lg-layout} {
+            height: 90%;
+            padding-top: 0;
+            align-items: initial;
+            padding: 2%;
+            gap: 1vw;
+            
+        }
+        li{
+            gap: 3vw;
+            @include flexRow;
+            @media #{$md-layout} {
+                @include flexColumn;
+                text-align: center;
+                width: calc(100%/3.4);
+                text-align: center;
+                gap: 10%;
+                padding: 2%;
+                align-items: center;
+                // height: 25%;
+            }
+            i{
+                font-size: 2rem;
+                width: 15%;
+                text-align: center;
+                @media #{$md-layout}{
+                    width: initial;
+                }
+            }
+            p{
+                width: 75%;
+                @media #{$md-layout} {
+                    padding-top: 8%;
+                    font-size: .8rem;
+                    line-height: 1rem;
+                    text-align: center;
+                }
+                @media #{$lg-layout} {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+#our-team{
+    width: 100%;
+    background: #1e1e1e;
+    color: #fff;
+    padding: 4vh 3vw;
+    @media #{$md-layout} {
+        padding: 8vh 3vw;
+        text-transform: capitalize;
+    }
+    >ul {
+        @media #{$md-layout} {
+            @include flexRowWrap;   
+        }
+        >li{
+            height: 30vh;
+            width:100%; 
+            margin: 2vh 0;
+            @media #{$md-layout} {
+                width: calc(100%/2.2);  
+                padding: 1vw;
+                height: 25vh;
+            }
+            @media #{$lg-layout} {
+                width: calc(100%/3);  
+                padding: 1vw;
+                height: 40vh;
+                // *{font-size: .6rem;}
+            }
+        }
+    }
+}

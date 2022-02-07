@@ -1,0 +1,177 @@
+#products-container{
+    position: relative;
+    @media #{$lg-layout} {
+        @include flexRowWrap;
+    }
+}
+    
+.products-pgbckgrnd{
+    width: 100%;
+    height: 70vh;
+    background: url('../../images/tools3.jpeg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.prd-search-left{
+    display: none;
+}
+@media #{$lg-layout} {
+    .prd-search-left{
+        display: block;
+        width: 25vw;
+        @include flexRowWrap;
+        >p, >button{
+            display: block;
+            width: 50%;
+            height: 10vh;
+            padding: 4%;
+            font-size: 1rem;
+            border-bottom: 1px solid #000;
+            // border: 1px solid #000;
+        }
+        >p{
+            text-align: left;
+            @include flexRowCenter;
+        }
+        >button{
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #000;
+            color: var(--third-color);
+        }
+        .prd-filter-list{
+            height: 95%;
+            width: 100%;
+            li{
+                @include flexRowCenter;
+                justify-content: left;
+                padding-left: 5%;
+            }
+        }
+    }
+    .products-showing-wrp{
+        width: 75vw;
+        padding: 0;
+    } 
+}
+@media #{$monitor-1080p}{
+    .prd-search-left{
+        >p, >button{
+            height: 10%;
+            font-size: 1.4rem;
+            // border: 1px solid #000;
+        }
+    }
+}
+/***** FILTER MENU OPTIONS *****/
+.prdf-option{
+    display: block;
+    height: 100%;
+    width: 100%;
+    // min-height: 15vh;
+    padding: 3%;
+    .prdf-os{
+        font-size: 1.4rem;
+        width: 100%;
+        @media #{$laptop-device} {
+            font-size: 1.6rem;
+        }
+    }
+    .prdf-ol{
+        li{
+            padding: 5%;
+            width: 100%;;
+            font-size: 1.1rem;
+            @media #{$laptop-device} {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+/***** product display data info *****/
+#prd-pginfo-wrp{
+    text-align: center;
+    border-left: 1px solid #000;
+    @media #{$md-layout} {
+        @include flexRow;
+        gap: 24vw;
+    }
+    @media #{$lg-layout} {
+       width: 100%;
+       background: var(--third-color);
+       gap: 0vw;
+    }
+    p{
+        // padding: 4%;
+        @media #{$lg-layout} {
+            display: block;
+            width: 50%;
+            text-align: left;
+            height: 10vh;
+            @include flexRowCenter;
+            gap: .5vw;
+        }
+    }
+    form{
+        // padding: 1%;
+        @media #{$md-layout} {
+            @include flexRow;
+            padding: 2%;
+            height: 10vh;
+        }
+        @media #{$lg-layout} {
+            width: 50%;
+            // background: rgb(101, 209, 101);
+        }
+        label{
+            font-size: .8rem;
+            @media #{$lg-layout} {
+                width: 100%;
+                @include flexRowCenter;
+                // background: rgb(87, 158, 87);
+            }
+        }
+        select{
+            height: 5vh;
+            width: 30vw;
+            margin-left: 2vw;
+            @media #{$lg-layout} {
+                width: 30%;
+                height: initial;
+                padding: 1% 2%;
+                text-transform: capitalize;
+            }
+            // background: none;
+        }
+    }
+}
+/********** single row item list *****/
+.srow-item-list{
+    padding: 8vh 3vw;
+    @include flexColumn;
+    gap: 4vh;
+    @media #{$lg-layout} {
+        padding: 4vh 3vw; 
+        width: 100%;
+        border-left: 1px solid #000;
+        >li{
+            &::after{
+                position: relative;
+                padding-top: 3%;
+                content: ' ';
+                display: block;
+                height: 2px;
+                width: 100%;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.248) ;
+            }
+        }
+    }
+    @media #{$monitor-1080p} {
+        @include flexRowWrap;
+        li{
+            width: 48%;
+            height: 24vh;
+        }
+    }
+}

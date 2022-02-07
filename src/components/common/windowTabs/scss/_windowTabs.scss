@@ -1,0 +1,54 @@
+/********** pd details more wrp *****/
+.windowtab-container{
+    padding: 0 3vw;
+    @media #{$md-layout} {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+    @media #{$lg-layout} {
+        width: 100%;
+    }
+    .wt-topics-list{
+        padding-bottom: 1vh;
+        @include flexRowWrap;
+        background: var(--color-text-lightgray);
+        @media #{$md-layout} {
+            @include flexRow;
+            padding-top: 1vh;
+        }
+        .wt-tab{
+            height: 5vh;
+            width: calc(100%/2);
+            @include flexRowCenter;
+            @media #{$md-layout} {
+                width: calc(100%/4);
+            }
+        }
+    }
+    .wt-detail-content{
+        border: 2px solid var(--color-text-lightgray);
+        padding: 6%;
+        @media #{$lg-layout} {
+            max-height: 60vh;
+        }
+    }
+    .wt-description-wrp{
+        @include flexColumn;
+        gap: 2vh;
+        ul{
+            padding: 0 3vw;
+            list-style:outside;
+            @include flexColumn;
+            gap: 1vh;
+        }
+        p{
+            line-height: 1.4rem;
+        }
+    }
+    .wts-detail{
+        display: grid;
+        grid-template-columns: 75% 25%;
+        grid-template-rows: 1fr;
+        border-bottom: 1px solid #000;
+    }
+}

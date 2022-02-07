@@ -1,0 +1,217 @@
+footer {
+  width: 100%;
+  padding: 5vw;
+}
+
+footer span {
+  width: 100%;
+}
+
+footer #footer-social-medias-wrp {
+  height: 8vh;
+  padding: 1vw;
+  font-size: 2.5rem;
+  padding-left: 0vw;
+}
+
+footer #footer-social-medias-wrp a {
+  color: #000;
+}
+
+footer #footer-social-medias-wrp i {
+  width: 10vw;
+}
+
+footer #footer-social-medias-wrp #footer-youtube-icon {
+  margin-left: 5vw;
+}
+
+footer #footer-contact-info-wrp {
+  color: #000;
+  width: 100%;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+footer #footer-contact-info-wrp > * {
+  padding: .5vh 0;
+}
+
+footer #footer-contact-info-wrp > a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+footer > ul > li {
+  margin: 3vh 0;
+}
+
+footer > ul > li a {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+footer > ul > li li {
+  text-transform: capitalize;
+  margin: 2px 0;
+}
+
+footer > ul > li p {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+footer > ul > li .footer-inner-inner-options {
+  margin-left: 10vw;
+}
+
+footer > p {
+  text-align: center;
+  font-size: 1rem;
+}
+
+@media screen and (orientation: landscape) {
+  footer {
+    display: -ms-grid;
+    display: grid;
+    height: initial;
+    -ms-grid-rows: 90% 10%;
+        grid-template-rows: 90% 10%;
+    -ms-grid-columns: 30% 70%;
+        grid-template-columns: 30% 70%;
+    font-size: 1rem;
+    padding-bottom: 3vh;
+  }
+  footer span {
+    height: 30%;
+    display: block;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+  }
+  footer #footer-social-medias-wrp {
+    padding: 0;
+    padding-bottom: 0vh;
+    border: none;
+    margin-top: 15vh;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 25%;
+    text-align: center;
+  }
+  footer #footer-social-medias-wrp a {
+    width: 5vw;
+    font-size: 2.8rem;
+  }
+  footer #footer-social-medias-wrp a i {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  footer #footer-contact-info-wrp {
+    margin-top: 25vh;
+    font-size: 1rem;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+  }
+  footer > p {
+    grid-column: 1 / end;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    padding: 1vw;
+    font-size: .8rem;
+  }
+  footer > ul {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    grid-column: 2 / end;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25% 30% 20% 25%;
+        grid-template-columns: 25% 30% 20% 25%;
+    border: none;
+  }
+  footer > ul li {
+    text-align: center;
+  }
+  footer > ul li > a {
+    font-size: 1.2rem;
+  }
+  footer > ul li ul {
+    font-size: .8rem;
+  }
+  footer > ul li:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+  }
+  footer > ul li:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+  }
+  footer > ul li:nth-child(2) p {
+    font-size: .8rem;
+  }
+  footer > ul li:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3 / 4;
+  }
+  footer > ul li:nth-child(4) {
+    display: block;
+    height: 40%;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4 / 5;
+  }
+  footer > ul li:nth-child(5) {
+    margin-top: 20vh;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4 / 5;
+    height: 50%;
+  }
+  footer > ul li .footer-inner-inner-options {
+    margin-left: 1.5vw;
+  }
+}
+/*# sourceMappingURL=footer.css.map */
