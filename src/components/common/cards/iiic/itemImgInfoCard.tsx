@@ -13,7 +13,7 @@ const ItemImgInfoCard: React.FC<ItemImgInfoCardProps> = ({sale}) => {
             </div>
             <article className="iiic-prdouct-details">
                 <p>ahorrar $64.00</p>
-                <h2>dewalt dwe575SB</h2>
+                <h2 onClick={() => window.location.href = "/product/1234"}>dewalt dwe575SB</h2>
                 <ul className="price-comparion-list">
                     <li>$79.00</li>
                     <li>era $143.00</li>
