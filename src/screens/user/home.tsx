@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import ItemImgInfoCard from '../../components/common/cards/iiic/itemImgInfoCard';
 import ItemPreviewCard from '../../components/common/cards/itemPreviewCard';
 import maxLogo from '../../static/images/max-logo.jpg';
+import data from "../../data/home.json";
 
 interface HomeProps {
     
@@ -15,9 +16,9 @@ const Home: React.FC<HomeProps> = () => {
             <div id="intro-section">
                 <section>
                     <h1>
-                        we have the tools you need to get the job done
+                        {data.header}
                     </h1>
-                    <p>A reasonable price guranteed</p>
+                    <p>{data.sub_header}</p>
                 </section>
             </div>
             <div id="shop-by-brand-section">
@@ -59,8 +60,8 @@ const Home: React.FC<HomeProps> = () => {
                 </ul>
             </div>
             <section id="subscribe-section">
-                <h3>Suscríbete a nuestro boletín</h3>
-                <p>Conozca nuevas ofertas y obtenga más ofertas uniéndose a nuestro boletín</p>
+                <h3>{data.newsletter_header}</h3>
+                <p>{data.newsletter_subheader}</p>
                 <form action="" id="subscribe-newsletter">
                     <input type="email" required placeholder='Por favor introduzca su correo'/>
                     <button type="submit" className='subscribe-btn'>subscribir ahora</button>
@@ -68,7 +69,7 @@ const Home: React.FC<HomeProps> = () => {
             </section>
             <div className="itm-bnr-itmlst-tempate" id="popular-products-section">
                 <div className="sectiontitle-link">
-                    <h2>Popular Products</h2>
+                    <h2>{data.secondary_product_list_header}</h2>
                     <a href="/#">see all products</a>
                 </div>
                 <ul className="itm-prv-list">

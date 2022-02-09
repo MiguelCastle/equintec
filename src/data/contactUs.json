@@ -1,0 +1,24 @@
+{
+    "header": "Contact Us",
+    "sub_header":"We're Here For You",
+    "first_section_title": "Contact Information",
+    "first_section_description": "Es entrgar soluciones de valor, para la construccion y mineria, comercializando productos y servicios innovadores, seguros y de calidad, que contribuyan a mejorar la productividad de la enfierradura en chile.",
+    "office_info_list": {
+        "address":"La Divisa 0340 bodega 1, San Bernardo",
+        "phone": "+92 423 567",
+        "email":"info@equintec.cl"
+    },
+    "office_hours":[
+        {
+            "days":"Monday-Saturday",
+            "time": "11am-7pm ET"
+        },
+        {
+            "days":"Sunday",
+            "time": "11am-6pm ET"
+        }
+    ],
+    "form_header": "Got Any Questions?",
+    "form_subheader": "Use the form below to ge in touch with the sales team",
+    "form_button_label": "submit"
+}

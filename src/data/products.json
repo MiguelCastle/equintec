@@ -1,0 +1,36 @@
+{
+    "header": "Products",
+    "sub_header":"shop for high quality",
+    "filter_lista": [
+        {
+            "name": "Category",
+            "options": [
+                "furniture",
+                "Coffee & Tables",
+                "Lighting",
+                "Decoration"
+            ]
+        },
+        {
+            "name": "Size",
+            "options": [
+                "Extra Small",
+                "Small",
+                "Medium",
+                "Large"
+            ]
+        },
+        {
+            "name": "Brand",
+            "options": [
+                "Apple",
+                "Microsoft",
+                "Android"
+            ]
+        }
+    ],
+    "sort_by": [
+        "most popular",
+        "most rated"
+    ]
+}
